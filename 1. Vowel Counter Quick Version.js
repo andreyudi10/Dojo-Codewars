@@ -28,3 +28,4 @@ function getCount(str) {
   }
   //====================================================================
 //nyoba tambah tulisan
+//lagi nambah
