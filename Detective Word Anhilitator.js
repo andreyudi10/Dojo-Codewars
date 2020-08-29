@@ -16,13 +16,13 @@ function removedKnownWord(sentence,word){
   
   let k=[]
   for (let i = 0 ; i < x.length ; i++ ) {
-      r=""
-      for ( let j = i ; j < i+p ; j++ ){ // generate word by array
-        r += x[j]            
-      }
-      if( i < x.length - (p-1)) 
-        k.push(r)
-      }
+    r=""
+    for ( let j = i ; j < i+p ; j++ ){ // generate word by array
+      r += x[j]            
+    }
+    if( i < x.length - (p-1)) 
+      k.push(r)
+    }
 
   let l=""
   for( let i = 0 ; i < x.length ; i++ ) {
