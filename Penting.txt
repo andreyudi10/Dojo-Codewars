@@ -19,6 +19,18 @@ obj = Object.keys(obj).reduce((a, b) => {
 
 console.log(obj);
 
+============================================
+
+const transform = x => x.split(" ")[0];
+
+Object.keys(obj1).forEach(key => {
+    const val = obj1[key];
+    delete obj1[key];
+    obj1[transform(key)] = val;
+});
+
+console.log(obj1);
+
 add value to index in object
 You can use Array#push method to insert Objects instead of creating multidimensional array
 
