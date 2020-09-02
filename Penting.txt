@@ -1,0 +1,31 @@
+add named index in object
+I'd use reduce on the Object.keys()
+
+let obj = {
+  'patato la blaza': {
+    'weight': 5,
+    'height': 90
+  },
+  'apple ibiza': {
+    'weight': 3,
+    'height': 84
+  }
+};
+
+obj = Object.keys(obj).reduce((a, b) => {
+  a[b.substring(0, b.indexOf(' '))] = obj[b];
+  return a;
+}, {});
+
+console.log(obj);
+
+add value to index in object
+You can use Array#push method to insert Objects instead of creating multidimensional array
+
+var cars = [];
+//insert elements like
+
+cars.push({name:"BMW", cost:50000});
+cars.push({name:"Ferrari", cost:55000});
+// see the cars
+console.log(cars)
